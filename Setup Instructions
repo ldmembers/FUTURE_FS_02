@@ -1,0 +1,170 @@
+LeadFlow CRM — Setup Instructions
+Overview
+LeadFlow CRM is a client lead management dashboard with features including lead tracking, pipeline management, analytics, and real-time reporting. The application is a self-contained HTML file that runs entirely in the browser.
+
+System Requirements
+Requirement	Minimum
+Browser	Chrome (latest), Firefox (latest), Edge (latest), Safari (latest)
+Internet	Required for Google Fonts, Chart.js CDN (first load only)
+Storage	No disk space requirement (runs in memory)
+Installation Steps
+Step 1: Save the File
+Create a new file named LeadFlow-CRM.html on your computer
+
+Copy the entire HTML code provided
+
+Paste it into the file and save
+
+Step 2: Open the Application
+Double-click the LeadFlow-CRM.html file — it will open in your default web browser
+
+OR Right-click → Open with → Choose your preferred browser
+
+Quick Start Guide
+Login Credentials
+Field	Value
+Username	admin
+Password	admin123
+Login Flow
+Enter username and password on the login screen
+
+An OTP (6-digit code) will appear in a hint box — copy this code
+
+Enter the OTP in the verification boxes
+
+Automatic login after successful verification
+
+⚠️ Note: OTP is displayed directly on screen for demo purposes (no actual email is sent).
+
+Feature Guide
+Dashboard
+Real-time KPI cards (Total Leads, New, Contacted, Converted, Lost)
+
+Lead trend line chart (30-day view)
+
+Status distribution doughnut chart
+
+Pipeline funnel visualization
+
+Lead sources breakdown
+
+Recent activity feed
+
+Lead Management
+Feature	Description
+View All Leads	Table with sortable columns
+Search	Filter by name, email, company, or phone
+Status Filter	Click pills (All/New/Contacted/Converted/Lost)
+Bulk Actions	Select multiple leads → change status or delete
+Row Menu (⋮)	Quick status changes, edit, delete
+Add New Lead
+Required fields: Full Name, Email Address
+
+Optional: Phone, Company, Source, Status, Priority, Message
+
+Keyboard shortcut: Press N anywhere to open Add Lead page
+
+Lead Details Drawer
+Click any lead row to open detailed view
+
+Click pipeline stages to update status instantly
+
+Inline editing (click "Edit" button)
+
+Add follow-up notes
+
+View complete activity history
+
+Reports
+Conversion rate analytics
+
+Active pipeline metrics
+
+Monthly leads vs conversions bar chart
+
+Average notes per lead
+
+Settings
+Account information (read-only demo)
+
+Notification toggles
+
+Pipeline stages reference
+
+Version info
+
+Keyboard Shortcuts
+Shortcut	Action
+N	Open Add Lead page
+Esc	Close drawer or modal dialogs
+Data Persistence
+⚠️ Important: This is a demo application. All data is stored in browser memory only.
+
+Leads are NOT saved between page refreshes or browser sessions
+
+Reloading the page resets all data to the default demo leads
+
+No database or backend storage is used
+
+Troubleshooting
+Issue: Login fails
+Username must be exactly admin
+
+Password must be exactly admin123
+
+Issue: OTP doesn't work
+Check the hint box that displays the OTP
+
+OTP is visible on screen — no email required
+
+Click "Resend OTP" to generate a new code
+
+Issue: Charts not displaying
+Ensure internet connection for Chart.js CDN
+
+Refresh the page and try again
+
+Issue: Mobile layout issues
+Use landscape orientation on phones
+
+Sidebar can be toggled with ☰ button in top bar
+
+Issue: Keyboard shortcuts not working
+Shortcuts work only when no input field is focused
+
+Click outside any input field before using shortcuts
+
+Demo Data Included
+The application comes pre-loaded with 12 demo leads featuring:
+
+Various statuses (New, Contacted, Converted, Lost)
+
+Multiple priority levels (High, Medium, Low)
+
+Different lead sources (Website, LinkedIn, Referral, Cold Email, Instagram)
+
+Sample notes and activity history
+
+Customization Notes
+Since the file is pure HTML/CSS/JS, you can modify:
+
+Colors via CSS variables in :root section
+
+Demo leads data in the leads array (around line 800-900)
+
+Login credentials in doLogin() function
+
+Charts, KPIs, and dashboard layout
+
+Support
+This is a standalone demo application. For issues:
+
+Verify browser compatibility
+
+Clear browser cache and reload
+
+Ensure JavaScript is enabled
+
+Version: 2.0.0
+Build Date: 2026
+Purpose: Client lead management demonstration
